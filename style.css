@@ -5,12 +5,13 @@ body {
   font-family: "Noto Sans SC", sans-serif;
 }
 
-@media (min-width: 320px) {
-  main {
-    width: 100%;
-    box-sizing: border-box;
-  }
+main {
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+}
 
+@media (min-width: 320px) {
   [class*="block-"] {
     margin: 10px;
     box-sizing: border-box;
@@ -149,5 +150,25 @@ body {
     border: none;
     border-radius: 25px;
     box-shadow: 0 2px #999;
+  }
+}
+
+@media (min-width: 769px) {
+  .block-one,
+  .block-two,
+  .block-three,
+  .block-four {
+    float: left;
+    width: calc(50% - 20px);
+  }
+}
+
+@media (min-width: 1200px) {
+  .block-one,
+  .block-two,
+  .block-three,
+  .block-four {
+    float: left;
+    width: calc(25% - 20px);
   }
 }
